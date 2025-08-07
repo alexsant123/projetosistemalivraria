@@ -1,9 +1,7 @@
 package model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import enums.Genero;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,6 +14,9 @@ public class Livro {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Enumerated(EnumType.STRING)
+    private Genero genero;
+
     private String titulo;
 
     private String autor;
@@ -26,16 +27,14 @@ public class Livro {
 
     private int ano;
 
-    private String genero;
 
      public Livro() {
     }
 
-     public Livro(String titulo, String autor, String editora, int ano, String genero) {
+     public Livro(String titulo, String autor, String editora, int ano) {
         this.titulo = titulo;
         this.autor = autor;
         this.editora = editora;
         this.ano = ano;
-        this.genero = genero;
-    }
+     }
 }
