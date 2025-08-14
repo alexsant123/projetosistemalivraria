@@ -26,11 +26,11 @@ public class HomeController {
     }
 
     @GetMapping({ "/cadastro/livros"})
-    public String usuarios( ) {
+    public String livros( ) {
 
 
 
 
-        return "livros/usuarios";
+        return "cadastro/livros";
     }
 }
