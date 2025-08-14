@@ -1,17 +1,9 @@
-package model;
+package livraria.model;
 
-import enums.TipoUsuario;
+import livraria.enums.TipoUsuario;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
 
 @Entity
-@Setter
-@Getter
-@ToString
-@AllArgsConstructor
 public class Usuario {
 
     @Id

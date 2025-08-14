@@ -1,4 +1,4 @@
-package enums;
+package livraria.enums;
 
 public enum TipoUsuario {
     ALUNO,

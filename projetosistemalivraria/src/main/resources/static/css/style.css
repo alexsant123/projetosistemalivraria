@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.logo-container {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border: 5px solid #556B2F;   /* borda verde oliva */
+    border-radius: 50%;           /* deixa redondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;       /* empilha BIBLIO e TECH */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-family: 'Georgia', serif;
+    text-align: center;
+    margin: 0 auto;               /* centraliza horizontalmente */
+}
+.logo-container .bibli {
+    color: #556B2F;
+    font-size: 28px;
+    font-weight: bold;
+}
+.logo-container .tech {
+    color: #ff8a00;
+    font-size: 28px;
+    font-weight: bold;
+}
