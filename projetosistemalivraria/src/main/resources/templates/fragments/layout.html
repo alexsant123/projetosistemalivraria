@@ -26,7 +26,7 @@
 
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Home</a>
+                    <a class="nav-link text-white" href="/index">Home</a>
                 </li>
 
                 <li class="nav-item">
@@ -35,9 +35,9 @@
                     </a>
                     <div class="collapse ps-3" id="collapseCadastros">
                         <ul class="nav flex-column">
-                            <li><a class="nav-link text-white" th:href="@{cadastro/usuarios}">Usuários</a></li>
-                            <li><a class="nav-link text-white" href="#">Livros</a></li>
-                            <li><a class="nav-link text-white" href="#">Relatórios</a></li>
+                            <li><a class="nav-link text-white" th:href="@{/cadastro/usuarios}">Usuários</a></li>
+                            <li><a class="nav-link text-white" th:href="@{/cadastro/livros}">Livros</a></li>
+                            <li><a class="nav-link text-white"  th:href="@{/cadastro/relatorios}">Relatórios</a></li>
                         </ul>
                     </div>
                 </li>
@@ -48,9 +48,9 @@
                     </a>
                     <div class="collapse ps-3" id="collapseEmprestimos">
                         <ul class="nav flex-column">
-                            <li><a class="nav-link text-white" href="#">Painel</a></li>
-                            <li><a class="nav-link text-white" href="#">Registrar</a></li>
-                            <li><a class="nav-link text-white" href="#">Relatórios</a></li>
+                            <li><a class="nav-link text-white" th:href="@{/emprestimos/painel}">Painel</a></li>
+                            <li><a class="nav-link text-white" th:href="@{/emprestimos/registrar}">Registrar</a></li>
+                            <li><a class="nav-link text-white" th:href="@{/emprestimos/relatorios}">Relatórios</a></li>
                         </ul>
                     </div>
                 </li>
@@ -61,8 +61,8 @@
                     </a>
                     <div class="collapse ps-3" id="collapseConfiguracoes">
                         <ul class="nav flex-column">
-                            <li><a class="nav-link text-white" href="#">Usuário</a></li>
-                            <li><a class="nav-link text-white" href="#">Sistema</a></li>
+                            <li><a class="nav-link text-white" th:href="@{/configuracoes/usuario}">Usuário</a></li>
+                            <li><a class="nav-link text-white" th:href="@{/configuracoes/sistema}">Sistema</a></li>
                         </ul>
                     </div>
                 </li>

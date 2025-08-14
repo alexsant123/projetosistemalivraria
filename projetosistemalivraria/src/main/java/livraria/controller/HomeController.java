@@ -33,4 +33,12 @@ public class HomeController {
 
         return "cadastro/livros";
     }
+    @GetMapping({ "/cadastro/relatorios"})
+    public String relatorios( ) {
+
+
+
+
+        return "cadastro/relatorios";
+    }
 }
