@@ -2,7 +2,11 @@ package livraria.model;
 
 import livraria.enums.TipoUsuario;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter
+@Getter
 @Entity
 public class Usuario {
 
@@ -14,16 +18,14 @@ public class Usuario {
 
     private String email;
 
+    private String senha;
+
     @Enumerated(EnumType.STRING)
     private TipoUsuario tipo;
 
      public Usuario() {}
 
-     public Usuario(String nome, String email, TipoUsuario tipo) {
-        this.nome = nome;
-        this.email = email;
-        this.tipo = tipo;
-    }
+
 
 
 }

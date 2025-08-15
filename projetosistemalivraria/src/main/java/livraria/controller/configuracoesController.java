@@ -22,5 +22,11 @@ public class configuracoesController {
 
         return "configuracoes/usuario";
     }
+    @GetMapping({"/usuario"})
+    public String salvarUsuario(  ) {
 
+
+
+        return " /usuario";
+    }
 }
