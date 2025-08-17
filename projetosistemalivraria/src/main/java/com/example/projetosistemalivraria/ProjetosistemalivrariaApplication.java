@@ -7,6 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan(basePackages= {"livraria.*"})
+@EntityScan(basePackages = "livraria/model")
 public class ProjetosistemalivrariaApplication {
 
 	public static void main(String[] args) {
