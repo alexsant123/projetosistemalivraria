@@ -27,6 +27,6 @@ public class configuracoesController {
 
 
 
-        return " /usuario";
+        return "configuracoes/usuario";
     }
 }

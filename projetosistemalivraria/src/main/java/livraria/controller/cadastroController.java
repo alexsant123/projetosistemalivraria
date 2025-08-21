@@ -2,13 +2,16 @@ package livraria.controller;
 
 import livraria.model.Usuario;
 import livraria.service.UsuarioService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class cadastroController {
 
+    @Autowired
     private  UsuarioService usuarioService;
 
     @GetMapping({"/", "/index"})
@@ -50,9 +53,15 @@ public class cadastroController {
     @GetMapping({ "/cadastrarUsuario"})
     public String cadastrarusuario(Usuario usuario, Model model ) {
 
-          usuarioService.salvar(usuario);
 
+        Usuario usuarioSalvo = usuarioService.salvar(usuario);
 
-        return"";
+         if (usuarioSalvo != null) {
+            model.addAttribute("message", "Salvo com sucesso!");
+        } else {
+            model.addAttribute("message", "Erro ao salvar usuário.");
+        }
+
+        return "cadastro/usuarios";
     }
 }
